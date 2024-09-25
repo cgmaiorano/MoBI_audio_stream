@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "app-name"
+name = "main"
 version = "0.1.0"
-description = "A beautiful description."
-authors = ["Reinder Vos de Wael <reinder.vosdewael@childmind.org>"]
-license = "LGPL-2.1"
+description = "For streaming audio data into an lsl stream"
+authors = ["kimit0310 <iktae.kim@childmind.org>"]
+license = "GNU Lesser General Public License v2.1"
 readme = "README.md"
-packages = [{include = "APP_NAME", from = "src"}]
+packages = [{include = "main", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "~3.11"
+pyaudio = "^0.2.14"
+pylsl = "^1.16.2"
+numpy = "^2.1.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
